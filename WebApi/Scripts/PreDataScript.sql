@@ -1,5 +1,3 @@
-DROP DATABASE Users
-
 CREATE DATABASE Users
 
 GO
