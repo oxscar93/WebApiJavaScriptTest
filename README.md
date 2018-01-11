@@ -22,7 +22,7 @@ Para correr los unit test: Menu Test -> Run All Test (se utilizó el framework d
 
 ### API y contracts
 
-(GET) {locahost}/MyResftfullApp/Cotizacion/MONEDA -> Para obtener la cotizacion actual <br/>
+(GET) {locahost}/MyRestfullApp/Cotizacion/Moneda/{currency} -> Para obtener la cotizacion actual <br/>
 (GET) {localhost}/MyRestfullApp/Users/GetUsers -> Para obtener todos los usuarios <br/>
 (POST) {localhost}/MyRestfullApp/Users/CreateUser -> Para crear un usuario <br/>
 (POST) {localhost}/MyRestfullApp/Users/UpdateUser/{id} -> Para actualizar un usuario en base a un id de usuario <br/>
