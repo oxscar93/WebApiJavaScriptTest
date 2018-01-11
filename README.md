@@ -11,7 +11,7 @@ Visual studio 2015, IIS y una base de datos SQL server
 ### Installing
 
 1- Correr script para crear la base de datos, tablas y datos dummy alojado dentro de WebApi/Scripts <br/>
-2- Modificar archivo Web.Config: Cambiar dentro de connection string la instancia de SQL server para apuntar a la base de datos SQL server local 
+2- Modificar archivo Web.Config: Cambiar dentro de connection string la instancia de SQL server para apuntar a la base de datos SQL server local <br/> 
 3- Correr Web Api desde visual studio
 
 ## Running the tests
@@ -22,8 +22,8 @@ Para correr los unit test: Menu Test -> Run All Test (se utilizó el framework d
 
 (GET) {locahost}/MyResftfullApp/Cotizacion/MONEDA -> Para obtener la cotizacion actual
 (GET) {localhost}/MyRestfullApp/Users/GetUsers -> Para obtener todos los usuarios
-(POST) {localhost}/MyRestfullApp/Users/CreateUser -> Para crear un usuario
-(POST) {localhost}/MyRestfullApp/Users/UpdateUser/{id} -> Para actualizar un usuario en base a un id de usuario
+(POST) {localhost}/MyRestfullApp/Users/CreateUser -> Para crear un usuario <br/>
+(POST) {localhost}/MyRestfullApp/Users/UpdateUser/{id} -> Para actualizar un usuario en base a un id de usuario <br/>
 (POST) {localhost}/MyRestfullApp/Users/DeleteUser/{id} -> Para borrar un usuario en base a un id de usuario
 
 Contrato JSON para actualizar o crear un usuario:
@@ -35,7 +35,7 @@ Contrato JSON para actualizar o crear un usuario:
   "UserPassword" : "a password"
 }
 
-```
+### Test Javascript
 
-
-
+1 - Clonar repositorio <br/>
+2 - Correr archivo HTML para visualizar todos los ejercicios
