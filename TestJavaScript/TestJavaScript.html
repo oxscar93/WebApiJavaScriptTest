@@ -1,0 +1,147 @@
+<html>
+<head>
+        <style>
+                table, td {
+                    border: 1px solid black;
+                }
+         </style>
+</head>
+<script>
+
+    function Employee(first, last, salary) {
+        this.firstName = first;
+        this.lastName = last;
+        this.salary = salary;
+        this.printMe = function() {
+                                document.writeln("{'Name': " + this.firstName + ",")
+                                document.writeln("'LastName': " + this.lastName + ",") 
+                                document.writeln("'Salary': " + this.salary + "}" + "<br></br>")
+                        }
+
+        this.increaseSalary = function(value) {
+                                this.salary= this.salary + value
+                                }
+    }
+
+    function multiplyBy()
+    {
+        var mul = 1
+        
+        for (var i = 0, len = arguments.length; i < len; i++) {
+            mul = mul * arguments[i] 
+        }
+
+        return mul;
+    }
+
+    function Longest_Country_Name(params){
+        var longest = ""
+        for (var i = 0, len = params.length; i < len; i++) {
+             if (params[i].length > longest.length)
+             {
+                 longest = params[i]
+             }
+        }
+
+        return longest
+    }
+
+    function insert_Row()
+    {
+        debugger;
+        var element = document.getElementById("sampleTable");
+        var index = element.rows.length
+        var row = element.insertRow(0)
+        
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+       
+        
+        index ++;
+
+        cell1.innerHTML = "Row" + index + " cell1";
+        cell2.innerHTML = "Row" + index + " cell2";
+    }
+
+    function removecolor()
+    {
+        var element = document.getElementById("colorSelect");
+
+        if (element.options.length <= 0) return;
+
+         element.options.remove(element.selectedIndex);
+    }
+
+    function runExerciseOne()
+    {
+        document.write("ExerciseOne" + "<br></br>")
+        var employee = new Employee("Alberto", "Jose", 22000)
+        employee.printMe();
+        employee.increaseSalary(100);
+        employee.printMe();
+       
+    }
+
+    function runExerciseTwo()
+    {
+        document.write("ExerciseTwo" + "<br></br>")
+        document.write("Multiply : " + multiplyBy(2,3,4) + "<br></br>")
+    }
+
+    function runExerciseThree()
+    {
+        document.write("ExerciseThree" + "<br></br>")
+        document.write("Longest : " + Longest_Country_Name(["Australia", "Germany", "United States of America"]))
+    }
+
+
+    (function() {
+        runExerciseOne()
+        runExerciseTwo()
+        runExerciseThree()
+
+     })();
+
+</script>
+
+
+<body>
+
+<p>
+    ExerciseFour
+
+    <form>
+            <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+            </select>
+            <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+            
+</p>
+
+<p>
+        ExerciseFive
+
+        <table id="sampleTable">
+                <tr>
+                        <td>Row1 cell1</td>
+                        <td>Row1 cell2</td>
+                      </tr>
+                      <tr>
+                        <td>Row2 cell1</td>
+                        <td>Row2 cell2</td>
+                      </tr>
+                      <tr>
+                        <td>Row3 cell1</td>
+                        <td>Row3 cell2</td>
+                      </tr>
+        </table><br>
+               
+        <input type="button" onclick="insert_Row()" value="Insert row">             
+    </p>
+
+</body>
+</html>
