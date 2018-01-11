@@ -11,7 +11,8 @@ Visual studio 2015, IIS y una base de datos SQL server
 ### Installing
 
 1- Correr script para crear la base de datos, tablas y datos dummy alojado dentro de WebApi/Scripts <br/>
-2- Modificar archivo Web.Config: Cambiar dentro de connection string la instancia de SQL server para apuntar a la base de datos SQL server local <br/> 
+2- Modificar archivo Web.Config: Se utilizó Entity Framework para la capa de persistencia. Cambiar dentro de connection string la instancia de SQL server para apuntar a la base de datos SQL server local <br/> 
+
 3- Correr Web Api desde visual studio
 
 ## Running the tests
